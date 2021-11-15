@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Hub</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand p-4 icon" href="./index.html">GITHUB</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  aria-current="page"
+                  href="#historia"
+                  >HISTÓRIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#servicos">SERVIÇOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./comandos.html"
+                  >COMANDOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#video">VIDEO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Comandos</li>
+        </ol>
+      </div>
+    </section>
+
+    <main class="container">
+      <div
+        class="btn-group d-flex justify-content-center py-2"
+        role="group"
+        aria-label="Basic example"
+      >
+        <button type="button" class="btn btn-primary">Inicializando</button>
+        <button type="button" class="btn btn-primary">Modificações</button>
+        <button type="button" class="btn btn-primary">Commits</button>
+        <button type="button" class="btn btn-primary">Remoto</button>
+        <button type="button" class="btn btn-primary">Desfazer</button>
+        <button type="button" class="btn btn-primary">Configurações</button>
+      </div>
+      <div>
+        <h2 class="title pt-4">Lista dos principais comando Git - Github</h2>
+      </div>
+      <div class="text-light">
+        <h3 class="subtitle">Inicializando</h3>
+
+        <p class="topic">Inicializar um repositório git:</p>
+        <p>$ git init</p>
+        <br />
+
+        <h3 class="subtitle">Visualizar modificações</h3>
+
+        <p class="topic">Visualizar os arquivos que foram modificados:</p>
+        <p>$ git status</p>
+
+        <p class="topic">Visualizar as modifições realizadas:</p>
+        <p>$ git diff [--name-only]</p>
+
+        <p class="topic">Visualizar lista dos commits já realizados:</p>
+        <p>$ git log [--stat] [--graph] [--author="Autor"] [--decorate]</p>
+
+        <p class="topic">Visualizar árvore de branchs e commits: :</p>
+        <p>$ git log --graph --pretty=oneline --abbrev-commit</p>
+
+        <p class="topic">
+          Visualizar log resumido dos commits, mostrando quantidade de commits e
+          quais foram os commits:
+        </p>
+        <p>$ git shortlog [-sn]</p>
+
+        <p class="topic">Visualizar detalhes de um commit:</p>
+        <p>$ git show hash_do_commit</p>
+        <br />
+
+        <h3 class="subtitle">Adicionando e fazendo commit</h3>
+
+        <p class="topic">
+          Adicionar todos os arquivos modificados para serem enviados no commit:
+        </p>
+        <p>$ git add .</p>
+
+        <p class="topic">
+          Realizar commit com descrição do que foi modificado:
+        </p>
+        <p>$ git commit -m "Descrição das modificações"</p>
+
+        <p class="topic">
+          Realizar commit já adicionando todos os arquivos modificados, que já
+          tenham sido adicionados alguma vez, e enviando a mensagem:
+        </p>
+        <p>$ git commit -am "Descrição das modificações"</p>
+        <br />
+
+        <h3 class="subtitle">Trabalhando com remoto</h3>
+
+        <p class="topic">Adicionar um repositório remoto:</p>
+        <p>
+          $ git remote add origin
+          https://github.com/usuario/nome-repositorio.git
+        </p>
+
+        <p class="topic">Visualizar branchs locais e remotos:</p>
+        <p>$ git branch [--list] [-a]</p>
+
+        <p class="topic">Enviar as modificações commitadas:</p>
+        <p>$ git push origin master</p>
+
+        <p class="topic">Criar tags para versionamento:</p>
+        <p>
+          $ git tag -a 1.0.0 -m "Descrição sobre a versão" $ git push origin
+          master --tags
+        </p>
+
+        <p class="topic">Criar um branch e mudar para ele ao mesmo tempo:</p>
+        <p>$ git checkout -b nome_do_branch</p>
+
+        <p class="topic">Enviar o branch para o repositório remoto</p>
+        <p>$ git push origin nome-do-branch</p>
+        <br />
+
+        <h3 class="subtitle">Desfazendo coisas</h3>
+
+        <p class="topic">Remover arquivo do monitoramento do Git:</p>
+        <p>
+          $ git rm --cached arquivo ou $ git rm arquivo #(OBS: CUIDADO, este
+          último comando exclui o arquivo do HD também)
+        </p>
+
+        <p class="topic">Apagar branch ou tag remotos:</p>
+        <p>
+          $ git tag -d 1.0.0 ou $ git branch -d iss42 $ git push origin :1.0.0
+          ou $ git push origin :iss42
+        </p>
+
+        <p class="topic">Remover remoto:</p>
+        <p>
+          $ git remote -v | Para verificar os remotos existentes $ git remote rm
+          nome_do_remoto
+        </p>
+
+        <p class="topic">
+          Desfazer mudanças antes de adicionar o arquivo modificado:
+        </p>
+        <p>$ git checkout nome_do_arquivo</p>
+
+        <p class="topic">
+          Desfazer mudanças após os arquivo ter sido adicionado à fila:
+        </p>
+        <p>$ git reset HEAD nome_do_arquivo $ git checkout nome_do_arquivo</p>
+
+        <p class="topic">Desfazer alterações após ter realizado o commit:</p>
+        <p>
+          $ git reset [--soft] [--mixed] [--hard]
+          hash_do_commit_anterior_ao_que_se_quer_excluir
+        </p>
+
+        <p class="topic">Onde:</p>
+        <ul>
+          <li>
+            --soft: apaga o commit mas deixa os arquivos na fila para commitar
+            novamente;
+          </li>
+          <li>
+            --mixed: apaga o commit e retira os arquivos da fila para serem
+            commitados;
+          </li>
+          <li>--hard: apaga o commit e as alterações nos arquivos;</li>
+        </ul>
+
+        <p class="topic">
+          Reverter o que foi enviado. Este comando não apaga o commit, ele faz
+          um novo commit desfazendo o que foi feito no commit escolhido.
+        </p>
+        <p>$ git revert hash_do_commit_a_ser_revertido</p>
+        <br />
+
+        <h3 class="subtitle">Alterando configurações</h3>
+        <p class="topic">Criar um alias para algum comando:</p>
+        <p>$ git config --global alias.nome_do_alias comando</p>
+
+        <p class="topic">Alterar nome e e-mail do usuário:</p>
+        <p>
+          $ git config --global user.name "Seu Nome"<br />$ git config --global
+          user.email "seu@email.com"
+        </p>
+
+        <p class="topic">Visualizar todas as configurações:</p>
+        <p>$ git config --list</p>
+      </div>
+
+      <div class="mt-5">
+        <small class="text-light"
+          >Fonte:
+          https://gist.github.com/davidalves1/2f7cb1e58197ba6da0436512f508b21a</small
+        >
+      </div>
+    </main>
+
+    <footer class="container-fluid bg-dark text-light">
+      <div class="container pt-4">
+        <ul class="footer-list d-flex justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="#historia"
+              >HISTÓRIA</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#servicos">SERVIÇOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./comandos.html">COMANDOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#video">VIDEO</a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="container d-flex justify-content-lg-center align-items-center"
+      >
+        <h4>CTD - T15 NT</h4>
+      </div>
+      <div
+        class="
+          container
+          d-flex
+          justify-content-lg-between
+          align-items-center
+          mb-2
+          pb-3
+        "
+      >
+        <p>Dumith Bou-Habib</p>
+        <p>Ederson Oliveira</p>
+        <p>Ewerton Lopes</p>
+        <p>Guilherme Parpineli</p>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
