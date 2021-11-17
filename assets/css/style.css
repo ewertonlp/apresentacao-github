@@ -217,6 +217,7 @@ section {
   justify-content: center;
   padding: 3.5rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
+  cursor: auto;
 }
 
 .grid_item:nth-child(2) {
@@ -266,11 +267,7 @@ section {
 
 .footer_container {
   display: grid;
-  gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 auto;
-  padding: 0.5rem;
-  padding-top: 1rem;
 }
 
 .grid_footer_container {
@@ -278,11 +275,27 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+}
+
+.grid_footer_container > h5 {
+  text-align: start;
+}
+
+.grid_footer_container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
 }
 
 .footer-list {
   list-style: none;
+  padding: 0;
+}
+
+.footer-list .nav-item {
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -307,6 +320,68 @@ section {
   .card {
     max-width: 100%;
   }
+
+  .edu_container {
+    row-gap: 2rem;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .edu__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .grid_item:nth-child(1) {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .grid-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid_item-2 {
+    margin: 1rem 0;
+  }
+
+  .grid_item:nth-child(2) {
+    border-radius: 1rem;
+    margin: 1rem 0;
+  }
+
+  .grid_item:nth-child(3) {
+    border-radius: 1rem;
+  }
+
+  .grid_item-2:nth-child(1) {
+    border-radius: 1rem;
+  }
+
+  .grid_item-2:nth-child(2) {
+    border-radius: 1rem;
+  }
+
+  .video iframe {
+    width: 200%;
+    height: 200px;
+  }
+
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .grid_footer_container {
+    padding: 2rem 0;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -317,5 +392,71 @@ section {
   }
   .wrapper {
     padding-left: 0;
+  }
+
+  .box {
+    margin: 1rem 0;
+  }
+
+  .edu_container {
+    row-gap: 2rem;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .edu__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .grid_item:nth-child(1) {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .grid-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid_item-2 {
+    margin: 1rem 0;
+  }
+
+  .grid_item:nth-child(2) {
+    border-radius: 1rem;
+    margin: 1rem 0;
+  }
+
+  .grid_item:nth-child(3) {
+    border-radius: 1rem;
+  }
+
+  .grid_item-2:nth-child(1) {
+    border-radius: 1rem;
+  }
+
+  .grid_item-2:nth-child(2) {
+    border-radius: 1rem;
+  }
+
+  .video iframe {
+    width: 100vw;
+    height: 200px;
+  }
+
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .grid_footer_container {
+    padding: 2rem 0;
   }
 }
