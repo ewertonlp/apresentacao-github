@@ -73,24 +73,36 @@
         role="group"
         aria-label="Basic example"
       >
-        <button type="button" class="btn btn-primary">Inicializando</button>
-        <button type="button" class="btn btn-primary">Modificações</button>
-        <button type="button" class="btn btn-primary">Commits</button>
-        <button type="button" class="btn btn-primary">Remoto</button>
-        <button type="button" class="btn btn-primary">Desfazer</button>
-        <button type="button" class="btn btn-primary">Configurações</button>
+        <button type="button" class="btn btn-primary">
+          <a href="#inicializando">Inicializando</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+          <a href="#modificacoes">Modficações</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+          <a href="#commits">Commits
+          </button></a>
+        <button type="button" class="btn btn-primary">
+          <a href="#remoto">Remoto</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+          <a href="#desfazer">Desfazer</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+          <a href="#configuracoes">Configurações</a>
+        </button>
       </div>
       <div>
         <h2 class="title pt-4">Lista dos principais comando Git - Github</h2>
       </div>
       <div class="text-light">
-        <h3 class="subtitle">Inicializando</h3>
+        <h3 class="subtitle" id="inicializando">Inicializando</h3>
 
         <p class="topic">Inicializar um repositório git:</p>
         <p>$ git init</p>
         <br />
 
-        <h3 class="subtitle">Visualizar modificações</h3>
+        <h3 class="subtitle" id="modificacoes">Visualizar modificações</h3>
 
         <p class="topic">Visualizar os arquivos que foram modificados:</p>
         <p>$ git status</p>
@@ -114,7 +126,7 @@
         <p>$ git show hash_do_commit</p>
         <br />
 
-        <h3 class="subtitle">Adicionando e fazendo commit</h3>
+        <h3 class="subtitle" id="commits">Adicionando e fazendo commit</h3>
 
         <p class="topic">
           Adicionar todos os arquivos modificados para serem enviados no commit:
@@ -133,7 +145,7 @@
         <p>$ git commit -am "Descrição das modificações"</p>
         <br />
 
-        <h3 class="subtitle">Trabalhando com remoto</h3>
+        <h3 class="subtitle" id="remoto">Trabalhando com remoto</h3>
 
         <p class="topic">Adicionar um repositório remoto:</p>
         <p>
@@ -160,7 +172,7 @@
         <p>$ git push origin nome-do-branch</p>
         <br />
 
-        <h3 class="subtitle">Desfazendo coisas</h3>
+        <h3 class="subtitle" id="desfazer">Desfazendo coisas</h3>
 
         <p class="topic">Remover arquivo do monitoramento do Git:</p>
         <p>
@@ -216,7 +228,7 @@
         <p>$ git revert hash_do_commit_a_ser_revertido</p>
         <br />
 
-        <h3 class="subtitle">Alterando configurações</h3>
+        <h3 class="subtitle" id="configuracoes">Alterando configurações</h3>
         <p class="topic">Criar um alias para algum comando:</p>
         <p>$ git config --global alias.nome_do_alias comando</p>
 
@@ -238,44 +250,42 @@
       </div>
     </main>
 
+    <!-- FOOTER -->
     <footer class="container-fluid bg-dark text-light">
-      <div class="container pt-4">
-        <ul class="footer-list d-flex justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#historia"
-              >HISTÓRIA</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#servicos">SERVIÇOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="./comandos.html">COMANDOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#video">VIDEO</a>
-          </li>
-        </ul>
-      </div>
-      <div
-        class="container d-flex justify-content-lg-center align-items-center"
-      >
-        <h4>CTD - T15 NT</h4>
-      </div>
-      <div
-        class="
-          container
-          d-flex
-          justify-content-lg-between
-          align-items-center
-          mb-2
-          pb-3
-        "
-      >
-        <p>Dumith Bou-Habib</p>
-        <p>Ederson Oliveira</p>
-        <p>Ewerton Lopes</p>
-        <p>Guilherme Parpineli</p>
+      <div class="container footer_container">
+        <div class="grid_footer_container">
+          <h5>Menu</h5>
+          <ul class="footer-list">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="#historia"
+                >HISTÓRIA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#apps">APPS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#educacao">EDUCAÇÃO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./comandos.html">COMANDOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#video">VIDEO</a>
+            </li>
+          </ul>
+        </div>
+        <div class="grid_footer_container">
+          <h5 class="">CTD - T15 NT</h5>
+
+          <p>Dumith Bou-Habib</p>
+          <p>Ederson Oliveira</p>
+          <p>Ewerton Lopes</p>
+          <p>Guilherme Parpineli</p>
+        </div>
       </div>
     </footer>
     <!-- SCRIPTS -->

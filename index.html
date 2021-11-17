@@ -43,13 +43,17 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#servicos">SERVIÇOS</a>
+                <a class="nav-link text-light" href="#apps">APPS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#educacao">EDUCAÇÃO</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="./comandos.html"
                   >COMANDOS</a
                 >
               </li>
+
               <li class="nav-item">
                 <a class="nav-link text-light" href="#video">VIDEO</a>
               </li>
@@ -72,18 +76,18 @@
     <div class="container mt-5 pt-4">
       <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
         <div class="col">
-          <div class="p-3 border bg-dark text-light text-center rounded-3 fs-5">
+          <div class="p-3 border bg-dark text-light text-center fs-5 box">
             <i class="bx bx-plus bx-md icon"></i> 4 milhões de <br />empresas
           </div>
         </div>
         <div class="col">
-          <div class="p-3 border bg-dark text-light text-center rounded-3 fs-5">
+          <div class="p-3 border bg-dark text-light text-center fs-5 box">
             <i class="bx bx-plus bx-md icon"></i> 73 milhões de <br />
             desenvolvedores
           </div>
         </div>
         <div class="col">
-          <div class="p-3 border bg-dark text-light text-center rounded-3 fs-5">
+          <div class="p-3 border bg-dark text-light text-center fs-5 box">
             <i class="bx bx-plus bx-md icon"></i> 200 milhões de <br />
             repositórios
           </div>
@@ -98,7 +102,7 @@
       <div class="py-4 mb-4 mt-4">
         <div class="row gx-5">
           <div class="col">
-            <div class="p-3 border bg-light fs-5 lh-3">
+            <div class="p-5 border bg-light fs-5 lh-3 box">
               <p>
                 Vivemos em um mundo onde estamos o tempo todo conectados,
                 podemos conversar com o outro lado do mundo sem problemas graças
@@ -163,52 +167,237 @@
       </div>
     </div>
 
-    <div class="container pt-5" id="servicos">
-      <h2 class="title"><i class="bx bx-git-repo-forked"></i> Serviços</h2>
+    <!-- APPS -->
+
+    <div class="container pt-5" id="apps">
+      <h2 class="title"><i class="bx bx-git-repo-forked"></i> Apps</h2>
+      <div class="row app">
+        <div class="col-4 app__text text-light">
+          <p>
+            <b class="bold">Sourcetree</b> é um aplicativo grátis, compatível
+            com Windows e Mac simples e poderoso, ideal para usuários iniciantes
+            e adeptos. <br />Possui uma interface limpa e elegante tornando a
+            experiência fácil e agradável. <br />
+            Tem suporte para grandes arquivos e uma visualização detalhada
+            dasbranches, o que facilita o trabalho em equipe.
+          </p>
+        </div>
+        <div class="col-8 app__img">
+          <img
+            class="img-fluid"
+            src="./assets/img/sourecetree_site.jpg"
+            alt="página do site"
+          />
+        </div>
+      </div>
+
+      <div class="row app pt-5">
+        <div class="col-8 app__img">
+          <img
+            class="img-fluid"
+            src="./assets/img/gihub_site.jpg"
+            alt="página do site"
+          />
+        </div>
+        <div class="col-4 app__text text-light">
+          <p>
+            A ferramenta <b class="bold">GitHub Desktop </b> é basicamente uma
+            extensão do GitHub, basta fazer o seu login e já pode começar a
+            trabalhar nos seus repositórios. Com uma interface intuitiva que
+            permite administrar o seu código sem a necessidade de comandos de
+            GIT, facilitando os commits e pushs para repositórios locais e
+            remotos, assim como criar e dar dar merge nas branches.
+          </p>
+        </div>
+      </div>
+
+      <div class="row app pt-5">
+        <div class="col-4 app__text text-light">
+          <p>
+            <b class="bold">Aurees </b>é um cliente GIT multiplataforma simples
+            e rápido. Possui mensalidades pagas mas é grátis para baixar e usar.
+            O aplicativo mostra commits e merges lado a lado tornando tranquilo
+            acessar versões anteriores e resolver conflitos, e também possui
+            tags coloridas para facilitar a visualização.
+          </p>
+        </div>
+        <div class="col-8 app__img">
+          <img
+            class="img-fluid"
+            src="./assets/img/aurees_site.jpg"
+            alt="página do site"
+          />
+        </div>
+      </div>
+
+      <div class="row app pt-5">
+        <div class="col-8 app__img">
+          <img
+            class="img-fluid"
+            src="./assets/img/gk_gui.png"
+            alt="página do site"
+          />
+        </div>
+        <div class="col-4 app__text text-light">
+          <p>
+            <b class="bold">GitKraken </b> não é somente uma ferramenta
+            confiável, eficiente, esteticamente estilosa e fácil de usar, mas
+            também torna as operações GIT mais compreensíveis e agradáveis de
+            usar. Possui uma ferramenta de drag and drop e permite corrigir
+            erros com um só clique. GitKraken possui um editor de código
+            integrado e permite rastrear tarefas e sincronizar com o GitHub.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCAÇÃO -->
+    <div class="container pt-5" id="educacao">
+      <h2 class="title"><i class="bx bx-book-open"></i> GitHub Education</h2>
+      <h5 class="text-light lh-5">
+        GitHub Education possibilita ensinar ou aprender desenvolvimento de
+        software através das ferramentas e suporte da plataforma e comunidade de
+        GitHub.
+      </h5>
+      <div class="grid">
+        <div class="grid_item box">
+          <div>
+            <h5 class="grid_subtitle">GitHub Education para estudantes</h5>
+            <p>
+              Ao utilizar o GitHub nos projetos estudantis torna-se possível
+              colaborar com outras pessoas, além de criar um portfólio que
+              servirá como experiência no mundo real. Cada pessoa com uma conta
+              do GitHub tem a opção de compartilhar em repositórios públicos e
+              privados ilimitados com o GitHub Free. Um estudante também pode
+              candidatar-se aos benefícios dos alunos do GitHub, que inclui
+              acesso ao Campus Global do GitHub, um plataforma digital para a
+              comunidade de alunos beneficiar-se de alguns dos melhores
+              programas que o GitHub Education tem para oferecer. No Campus
+              Global do GitHub é possível acessar conteúdos da Campus TV,
+              eventos de alunos, atividades de sala de aula GitHub e muito mais
+              ferramentas para auxiliar os estudantes a atingir seus objetivos
+              técnicos. Além de possuir também o GitHub Student Developer Pack e
+              o GitHub Campus Expert.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid_item box">
+          <div>
+            <h6 class="grid_subtitle">GitHub Student Developer Pack</h6>
+            <p>
+              O GitHub Student Developer Pack oferece livre acesso a ferramentas
+              e serviços usados pelos desenvolvedores profissionais. Desta
+              forma, os alunos podem adquirir uma experiência prática sem que
+              haja um custo proibitivo.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid_item box">
+          <div>
+            <h6 class="grid_subtitle">GitHub Campus Expert</h6>
+            <p>
+              Campus Experts são líderes estudantis que se esforçam para
+              construir espaços diversificados e inclusivos para aprender
+              habilidades, compartilhar suas experiências e construir projetos
+              juntos. Eles podem ser encontrados em todo o mundo, liderando
+              conferências, encontros e hackathons pessoais e online, e mantendo
+              projetos de código aberto.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="grid_item-2 box">
+          <div>
+            <div>
+              <h6 class="grid_subtitle">GitHub Education para educadores</h6>
+              <p>
+                Os educadores que ministram um curso sobre desenvolvimento de
+                software podem usar descontos, parcerias, treinamento e
+                ferramentas a partir de GitHub Education para ensinar
+                efetivamente as habilidades relevantes aos alunos. Com os
+                serviços e ferramentas do GitHub Education os educadores podem:
+                Usar o GitHub Classroom para distribuir código, dar feedback aos
+                alunos e coletar atribuições no GitHub. Ingressar na Education
+                Community para discutir tendências atuais na educação
+                tecnológica com seus colegas ao redor do mundo. Acessar e
+                adaptar planos de estudo de código aberto para ensinar sobre o
+                Git e o GitHub. Solicitar um kit surpresa do GitHub com
+                materiais e brindes educativos para os estudantes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item-2 box">
+          <div>
+            <h6 class="grid_subtitle">GitHub Education para pesquisadores</h6>
+            <p>
+              Através dos serviços e ferramentas do GitHub Education para
+              pesquisadores, torna-se possível: Colaborar com outras pessoas no
+              trabalho de pesquisa ao redor do mundo no GitHub. Aprender como as
+              instituições acadêmicas ao redor do mundo estão usando o GitHub
+              para suas pesquisas.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container pt-5" id="video">
       <h2 class="title"><i class="bx bx-play-circle"></i> Vídeo</h2>
     </div>
 
+    <section class="video d-flex justify-content-center" id="video">
+      <iframe
+        width="920"
+        height="475"
+        src="https://www.youtube.com/embed/IVXphf8qBj0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="box"
+      ></iframe>
+    </section>
+
     <footer class="container-fluid bg-dark text-light">
-      <div class="container pt-4">
-        <ul class="footer-list d-flex justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#historia"
-              >HISTÓRIA</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#servicos">SERVIÇOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="./comandos.html">COMANDOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#video">VIDEO</a>
-          </li>
-        </ul>
-      </div>
-      <div
-        class="container d-flex justify-content-lg-center align-items-center"
-      >
-        <h4>CTD - T15 NT</h4>
-      </div>
-      <div
-        class="
-          container
-          d-flex
-          justify-content-lg-between
-          align-items-center
-          mb-2
-          pb-3
-        "
-      >
-        <p>Dumith Bou-Habib</p>
-        <p>Ederson Oliveira</p>
-        <p>Ewerton Lopes</p>
-        <p>Guilherme Parpineli</p>
+      <div class="container footer_container">
+        <div class="grid_footer_container">
+          <h5>Menu</h5>
+          <ul class="footer-list">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="#historia"
+                >HISTÓRIA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#apps">APPS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#educacao">EDUCAÇÃO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./comandos.html">COMANDOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#video">VIDEO</a>
+            </li>
+          </ul>
+        </div>
+        <div class="grid_footer_container">
+          <h5 class="">CTD - T15 NT</h5>
+
+          <p>Dumith Bou-Habib</p>
+          <p>Ederson Oliveira</p>
+          <p>Ewerton Lopes</p>
+          <p>Guilherme Parpineli</p>
+        </div>
       </div>
     </footer>
 
